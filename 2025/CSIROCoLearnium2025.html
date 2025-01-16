@@ -9,6 +9,32 @@
 
 		<link rel="stylesheet" href="../dist/reveal.css">
 		<link rel="stylesheet" href="../dist/theme/black.css">
+
+		<style>
+			/* Bottom left caption thanks to : https://stackoverflow.com/questions/23543193/can-i-put-a-caption-on-the-lower-right-in-reveal-js */
+			.full {
+			  height:100%;
+			  width:100%;  
+			}
+			.bottom_l {
+			  bottom:0px;
+			  left:0px;
+			  position:absolute;
+			}
+			.bottom_r {
+			  bottom:0px;
+			  right:0px;
+			  position:absolute;
+			}
+
+			/* https://stackoverflow.com/questions/30861845/how-to-use-two-column-layout-with-reveal-js */
+			.container{
+				display: flex;
+			}
+			.col {
+				flex: 1;
+			}
+		  </style>
 	</head>
 
 	<body>
@@ -16,42 +42,259 @@
 			<div class="slides">
 				<section data-background="assets/csiro/wr140.jpg">
 
-					<section data-markdown style="text-align: left;" >
+					<section style="text-align: left;" >
 						<h2>A One-Stop Shop for Colliding Wind Binaries </h2>
 						<p>
 							CSIRO Co-learnium 2025
 						</p>
 						<p>
 							Ryan White <br>
-							<small>Macquarie University</small>
+							<small>Macquarie University</small><br>
+							<small>prev. The University of Queensland</small>
 						</p>
 					</section>
 
-					<section data-state="dim-background">
+					<section>
 						<p>
 							This talk summarises my recently released book chapter on Wolf-Rayet colliding wind binaries.
 						</p>
 						<img src="assets/csiro/chapter-qr.png" width='300'>
 						<p>
-							Or click the link: <a href="https://arxiv.org/abs/2412.12534">arxiv.org/abs/2412.12534</a>
+							Or you can access at <a href="https://arxiv.org/abs/2412.12534">arxiv.org/abs/2412.12534</a>
 						</p>
 					</section>
 
-					<section data-state="dim-background">
+					<section>
 						<p>
-							Or click the link: <a href="https://arxiv.org/abs/2412.12534">arxiv.org/abs/2412.12534</a>
+							The slides will be publicly available on my <a href="https://ryanwhite1.github.io/">website</a>.
+						</p>
+						<img src="assets/csiro/slides-qr.png" width='300'>
+						<p>
+							Or access them <a href="https://ryanwhite1.github.io/talks/2025/CSIROCoLearnium2025.html">here.</a>
 						</p>
 					</section>
 					
 				</section>
+
+				<section data-background="assets/csiro/wr18.jpg" data-background-opacity=0.3>
+
+					<section data-transition="fade">
+						<h2>Why Wolf-Rayet Stars?</h2>
+					</section>
+
+					<section data-transition="fade">
+						<h2>What are Wolf-Rayet Stars?</h2>
+					</section>
+
+					
+					<section id="fragments">
+						<p>Wolf-Rayet stars are the final evolutionary stage of the most massive stars</p>
+						<ul>
+							<li class="fragment">Very rapid evolution</li>
+							<li class="fragment">Ejected their hydrogen envelope</li>
+							<li class="fragment">Extreme mass loss through dense and fast winds</li>
+							<li class="fragment">Ticking down to Type Ibc Supernovae</li>
+							<li class="fragment">Likely (long) Gamma Ray Burst progenitors</li>
+						</ul>
+					</section>
+
+					<section id="fragments">
+						<p>
+							Unfortunately — or perhaps fortunately — these stars are rare in the present-day Galaxy
+						</p>
+						<p class="fragment">
+							What do they look like?
+						</p>
+					</section>
+
+					<section data-background="assets/csiro/wr18.jpg" data-background-opacity=1 class="full">
+						<p class="bottom_l">
+							WR 18 (ESO)
+						</p>
+					</section>
+					<section data-background="assets/csiro/wr124.jpg" data-background-opacity=1 class="full">
+						<p class="bottom_l">
+							WR 124 (NASA/ESA)
+						</p>
+					</section>
+					<section data-background="assets/csiro/wr7.jpg" data-background-opacity=1 class="full">
+						<p class="bottom_l">
+							WR 7 (ESO)
+						</p>
+					</section>
+					
+				</section>
+
+				<section>
+					
+					<section id="fragments">
+						<p>
+							The overwhelming majority of massive stars are born in binaries or higher order systems...
+						</p>
+						<p class="fragment">
+							What happens when we have a WR star in a carefully configured binary?
+						</p>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" class="full">
+						<p class="bottom_l">
+							WR 124 (NASA/ESA)
+						</p>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3 data-auto-animate>
+						<img data-src="assets/csiro/orbit_spiral.gif">
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3 data-auto-animate id="fragments">
+						<div class="container">
+							<div class="col">
+								<img data-src="assets/csiro/orbit_spiral.gif">
+							</div>
+				
+							<div class="col">
+								<ul>
+									<li>Spiral plumes created as massive stars orbit each other</li>
+									<li class="fragment">Dynamic on human timescales</li>
+									<li class="fragment">First directly imaged ~25 years ago. Need sensitive infrared telescopes with high angular resolution</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3>
+						<img data-src="assets/csiro/wr112.png">
+						<p class="bottom_l">
+							WR 112
+						</p>
+					</section>
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3>
+						<div class="container">
+							<div class="col">
+								<img data-src="assets/csiro/wr104.gif" width="80%">
+								<p class="bottom_l">
+									WR 104
+								</p>
+							</div>
+				
+							<div class="col">
+								<img data-src="assets/csiro/wr98a.gif" width="80%">
+								<p class="bottom_r">
+									WR 98a
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3>
+						<img data-src="assets/csiro/wr147.png" width="55%">
+						<p class="bottom_l">
+							<a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...900L...3R/abstract">WR 147</a>
+						</p>
+					</section>
+
+					
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=1>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=1 data-transition="fade">
+						<img data-src="assets/csiro/wr140.gif" width="55%">
+						<p class="bottom_l">
+							<a href="https://science.nasa.gov/missions/webb/webb-watches-carbon-rich-dust-shells-form-expand-in-star-system/">Emma Lieb, NASA</a>
+						</p>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3 class="full" data-auto-animate>
+						<img data-src="assets/csiro/apep.png">
+						<p class="bottom_l">
+							Apep
+						</p>
+					</section>
+
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3 data-auto-animate id="fragments">
+						<div class="container">
+							<div class="col">
+								<img data-src="assets/csiro/apep.png">
+								<p class="bottom_l">
+									Apep
+								</p>
+							</div>
+				
+							<div class="col">
+								<ul>
+									<li>Only known system with two evolved WR stars</li>
+									<li class="fragment">Longest period CWB with a dust nebula</li>
+									<li class="fragment">Brightest source in the Sydney Radio Star Catalogue, despite being ~2.5kpc away</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3 class="full">
+						<img data-src="assets/csiro/Apep_VISIR_gif.gif">
+						<p class="bottom_l">
+							Apep
+						</p>
+					</section>
+					<section>
+						<p>Watch this space...</p>
+					</section>
+				</section>
+
+				<section data-background="assets/csiro/wr140.jpg" data-background-opacity=0.3>
+					<section id="fragments">
+						<p>
+							There are several ways to determine the orbital solution of the binaries
+						</p>
+						<p class="fragment">
+							This gives us clues into the evolutionary history of the binaries, and what their future has in store
+						</p>
+					</section>
+
+					<section class="full">
+						<img data-src="assets/csiro/apep_geom_model.png" width="100%">
+						<p>
+							Apep geometric modelling, from <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.5604H/abstract">Han (2020)</a>
+						</p>
+					</section>
+
+					<section class="full">
+						<img data-src="assets/csiro/wr140_geom_model.png" width="90%">
+						<p>
+							WR 140 geometric modelling, from <a href="https://ui.adsabs.harvard.edu/abs/2022NatAs...6.1308L/abstract">Lau (2022)</a>
+						</p>
+					</section>
+
+
+					<section class="full">
+						<img data-src="assets/csiro/wr48a_lightcurve.png" width="70%">
+						<p>
+							WR 48a light curve, from <a href="https://ui.adsabs.harvard.edu/abs/2012MNRAS.420.2526W/abstract">Williams (2012)</a>
+						</p>
+					</section>
+
+					<section class="full">
+						<img data-src="assets/csiro/wr137_lightcurve.png" width="70%">
+						<p>
+							WR 137 light curve, from <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...956..109P/abstract">Peatt (2023)</a>
+						</p>
+					</section>
+
+
+				</section>
+
 			</div>
 		</div>
 
 		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
 		<script>
 			Reveal.initialize({
-				transition: 'linear'
+				transition: 'linear',
+				slideNumber: true,
+				plugins: [RevealMarkdown]
 			});
+			
 		</script>
 	</body>
 </html>
